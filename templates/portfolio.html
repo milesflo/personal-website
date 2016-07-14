@@ -1,0 +1,21 @@
+<div class="container">
+	<h1>Portfolio</h1>
+	<p class="flow-text ng-hide" ng-show="isMobile != true">Here is <a href="/resume" target="_blank">My Resume</a>.</p>
+	<div class="section center blue-text" ng-if="scope.loading == false">
+		<h1><i class="fa fa-cog fa-6x" style="animation: spin 2s linear infinite; margin: auto 0" aria-hidden="true"></i></h1>
+	</div>
+	<div class="row">
+		<div class="col s12 m6" ng-repeat="repo in repos">
+			<div class="card white darken-1">
+				<div class="card-content">
+					<span class="card-title blue-text">{{repo.name}}</span>
+					<p style="overflow: hidden">{{repo.description}}</p>
+				</div>
+				<div class="card-action">
+					<a href="{{repo.html_url}}" target="_blank">Check out the repo!</a>
+				</div>
+			</div>
+			<br ng-if="!(($index+1) %2)">
+		</div>
+	</div>
+</div>
