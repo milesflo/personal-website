@@ -8,7 +8,7 @@ app.controller("Main", ($scope, $rootScope, $routeParams, $http, $route) => {
 	$(() => {
 		if (!isMobile) {
 			$("#typebox").typed({
-        strings: ["curious", "driven", "a Hacker"],
+        strings: ["curious", "driven", "a hacker", "a Developer"],
         typeSpeed: 0,
         showCursor: false,
         contentType: "html"
