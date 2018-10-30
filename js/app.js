@@ -28,11 +28,6 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 		controller: "About",
 		activetab: "about"
 	})
-	.when('/stats', {
-		templateUrl:"templates/stats.html",
-		controller: "Stats",
-		activetab: null
-	})
    	.otherwise({
 	 	redirectTo: "/"
 	});

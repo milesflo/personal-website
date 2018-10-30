@@ -50,16 +50,3 @@ app.controller("About", ($scope, $rootScope, $routeParams, $http) => {
 	window.scope = $scope;
     console.log(window.location.pathname);
 })
-
-app.controller("Stats", ($scope, $rootScope, $routeParams, $http, $interval) => {
-	window.scope = $scope;
-
-	var initDatetime = moment([2015, 8, 30]);
-
-	var tick = () => {
-		var now = moment(new Date())
-		$scope.clock = now.diff(initDatetime, 'years', true).toFixed(2);
-	}
-	tick();
-	$interval(tick, 60000);
-})
