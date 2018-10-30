@@ -13,7 +13,7 @@ app.controller("Main", ($scope, $rootScope, $routeParams, $http, $route) => {
         showCursor: false,
         contentType: "html"
 			});
-			particlesJS.load('container', 'js/particle-config.json', function () {
+			particlesJS.load('particles', 'js/particle-config.json', function () {
 				console.log('callback - particles.js config loaded');
 			});
 		}  else {

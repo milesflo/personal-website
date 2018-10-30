@@ -8,6 +8,16 @@ main {
   flex: 1 0 auto;
 }
 
+#particles {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
 .icon-block {
   padding: 0 15px;
 }
