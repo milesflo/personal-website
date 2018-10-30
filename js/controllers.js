@@ -12,7 +12,10 @@ app.controller("Main", ($scope, $rootScope, $routeParams, $http, $route) => {
         typeSpeed: 0,
         showCursor: false,
         contentType: "html"
-      });
+			});
+			particlesJS.load('container', 'js/particle-config.json', function () {
+				console.log('callback - particles.js config loaded');
+			});
 		}  else {
 			$("#typebox").html("a Developer")
 			$scope.isMobile = true;
