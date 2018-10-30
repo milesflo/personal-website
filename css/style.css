@@ -52,63 +52,8 @@ main {
   50% { opacity:0; }
   100% { opacity:1; }
 }
-/* */
-
-.sneaky-link {
-  cursor: default;
-}
-
-.sneaky-link:hover {
-  text-shadow: 1px 1px rgba(0,0,0,.20);
-}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-/* label color */
-.input-field label {
-  color: #9e9e9e;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #2196F3;
-}
-/* label focus color */
-.input-field input[type=email]:focus + label {
-  color: #2196F3;
-}
-/* label focus color */
-.input-field textarea[type=text]:focus + label {
-  color: #2196F3;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #2196F3;
-  box-shadow: 0 1px 0 0 #2196F3;
-}
-/* label underline focus color */
-.input-field input[type=email]:focus {
-  border-bottom: 1px solid #2196F3;
-  box-shadow: 0 1px 0 0 #2196F3;
-}
-/* label underline focus color */
-.input-field textarea[type=text]:focus {
-  border-bottom: 1px solid #2196F3;
-  box-shadow: 0 1px 0 0 #2196F3;
-}
-/* valid color */
-.input-field input[type=text].valid {
-  border-bottom: 1px solid #4CAF50;
-  box-shadow: 0 1px 0 0 #4CAF50;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-  border-bottom: 1px solid #F44336;
-  box-shadow: 0 1px 0 0 #F44336;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: #2196F3;
 }
