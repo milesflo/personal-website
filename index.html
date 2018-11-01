@@ -57,7 +57,6 @@
         <li><a href="/contact">Contact</a></li>
         <li><a href="/resume" target="_blank">My Resume</a></li>
       </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <ul id="slide-out" class="side-nav">
@@ -68,6 +67,8 @@
     <li><a href="/contact">Contact</a></li>
     <li><a href="/resume" target="_blank">My Resume</a></li>
   </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
 	<main ng-view class="content">
 
 	</main>
@@ -95,6 +96,11 @@
 
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
-	<script type="text/javascript" src="http://materializecss.com/templates/starter-template/js/init.js"></script>
+  <!-- <script type="text/javascript" src="http://materializecss.com/templates/starter-template/js/init.js"></script> -->
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
 	</body>
 </html>
