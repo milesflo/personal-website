@@ -8,13 +8,10 @@ app.controller("Main", ($scope, $rootScope, $routeParams, $http, $route) => {
 	$(() => {
 		if (!isMobile) {
 			$("#typebox").typed({
-        strings: ["curious", "driven", "a hacker", "a Developer"],
-        typeSpeed: 0,
-        showCursor: false,
-        contentType: "html"
-			});
-			particlesJS.load('particles', 'js/particle-config.json', function () {
-				console.log('callback - particles.js config loaded');
+				strings: ["curious", "driven", "a hacker", "a Developer"],
+				typeSpeed: 0,
+				showCursor: false,
+				contentType: "html"
 			});
 		}  else {
 			$("#typebox").html("a Developer")

@@ -1,5 +1,9 @@
 var app = angular.module("personalPage", ["ngRoute", "ngAnimate"]);
 
+particlesJS.load('particles', 'js/particle-config.json', function () {
+	console.log('callback - particles.js config loaded');
+});
+
 app.config(function($routeProvider, $locationProvider, $httpProvider) {
 	console.log("Nosey lil fella, aren't you? I like that. Click on the smiley face if you want to see some hidden nerd stuff.");
 	$routeProvider
