@@ -10,6 +10,7 @@
 		<meta name="keywords" content="freelance,fullstack,web developer,SEAN,HTML,CSS,JavaScript,pen-test,SE,gray hat">
 		<meta name="author" content="Miles Florence">
     <meta name="google-site-verification" content="JVAd-jVzBDJrRm6ZcyoNvBtGaWtgkjqg06IFdRPRVZ4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- AngularJS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
@@ -24,7 +25,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
-		<!-- Materialize -->
+    <!-- Materialize -->
 		<link rel="stylesheet" type="text/css" href="css/materialize.css">
 		<script type="text/javascript" src="js/materialize.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -56,19 +57,17 @@
         <li><a href="/contact">Contact</a></li>
         <li><a href="/resume" target="_blank">My Resume</a></li>
       </ul>
-
-      <ul id="slide-out" class="side-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume" target="_blank">My Resume</a></li>
-      </ul>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
+  <ul id="slide-out" class="side-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About Me</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/resume" target="_blank">My Resume</a></li>
+  </ul>
 	<main ng-view class="content">
 
 	</main>
